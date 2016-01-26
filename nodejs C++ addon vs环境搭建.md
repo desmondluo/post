@@ -3,12 +3,13 @@ title: NodeJs Node-Webkit C++ addon 环境搭建
 categories: nodejs
 tags: [nodejs, node-webkit, nwjs]
 ---
-#### 使用Visual Status 2013创建node modules模块
+#### 使用visual studio 2013创建node modules模块
     学习视频：https://www.youtube.com/watch?v=KvjHn59C-uQ
 #### 1：下载并编译源码
     下载地址：https://nodejs.org/download/
     编译命令：vcbuild.bat nosign Release  //编译release版本
      vcbuild.bat nosign Debug                // 编译Debug版本
+<!--more-->
 #### 2：设置环境变量
     将当前node环境设置到环境变量里面
     set NODE_HOME=C:\Libs\node

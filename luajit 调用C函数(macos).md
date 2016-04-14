@@ -13,7 +13,7 @@ void add(int x, int y)
     return x + y;
 }
 ```
-
+<!--more-->
 ### lua脚本
 ```
 local ffi = require("ffi")

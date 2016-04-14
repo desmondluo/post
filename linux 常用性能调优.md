@@ -7,7 +7,7 @@ categories: [liunx, 工具]
 
 ### 前言
 首先介绍我要测试的程序 - reportserver, 这是最近开发的手机行情服务器, 走的是TCP连接, 然后应用层用了pb协议. 我们的用户主要是手机用户, 正常情况下, 用户会以5秒每次的频率请求数据.  我的测试程序是一个用C#写的windows程序, 建立起连接之后, 我会不断的发送请求, 而不是每隔5秒发发送一次.
-
+<!--more-->
 ### 测试DEMO是怎么写的
 ```
 public static ArrayList threadlist = new ArrayList();    // 这里是线程池

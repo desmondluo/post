@@ -6,7 +6,7 @@ categories: [liunx, 工具]
 
 ### iftop
   iftop是一个网络监测工具, 可以统计到端口的流量情况. 平常我们使用nload统计服务器流量也是够了, 但是当服务器部署了多个应用的时候, 需要知道是每个应用的流量的时候, 这个工具就会显得比较厉害了.
-
+<!--more-->
 ### 安装iftop
 ```
 sudo yum install flex byacc  libpcap ncurses ncurses-devel libpcap-devel
@@ -16,7 +16,7 @@ tar zxvf iftop-0.17.tar.gz
 cd iftop-0.17
 ./configure
 sudo make && sudo make install
-```  
+```
 
 ### 使用
   切换到root用户, 然后iftop

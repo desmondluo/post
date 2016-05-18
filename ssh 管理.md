@@ -36,6 +36,12 @@ ssh ALY254
 
 只有配置好了authorized_keys文件, 才能实现SSH的别名登录。
 
+设置权限
+```
+chmod 600 authorized_keys
+chmod 700 -R .ssh
+```
+
 ### ssh-copy-id
 这个工具就是为了解决copy公约到远程服务器的authorized_keys的操作，事实上这个个脚本, 大概是这样的
 ```

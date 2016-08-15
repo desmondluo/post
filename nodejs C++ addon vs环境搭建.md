@@ -34,4 +34,4 @@ tags: [nodejs, node-webkit, nwjs]
  2.  安装nw-gyp    npm install -g nw-gyp
  3.  进入工作目录，配置对应的版本nw-gyp configure --target=0.12.0   // 工作目录就是需要编译的模块目录 target 版本号就是对应的node-webkit版本号
  4.  运行nw-gyp build进行编译，这个使用要有对应的building.gyp文件，或是说直接打开上一步运行生成的工程，这样就生成了.node文件
- 5.  将生成的.node文件，放到node-webkit的一个目录，最后在js引用的使用，使用js的目录为当前目录，然后进行引用，就能运行了（var binding = require("../../../binding.node");）
+ 5.  将生成的.node文件，放到node-webkit的一个目录，最后在js引用的使用，使用js的目录为当前目录，然后进行引用，就能运行了（var binding = require("../../../binding.node");

@@ -28,3 +28,12 @@ fork = true               // 是否是后台进程
 ```
 mongod -f conf/mongod.conf
 ```
+
+### 连接
+```
+mongo 127.0.0.1:9810/test
+
+# 关闭
+use admin              // 切换权限
+db.shotdownServer()    // 关闭数据库
+```

@@ -50,3 +50,37 @@ db.serverStatus()              // 查看状态详情
 - optime & optimeDate 命令发出是oplog所记录的操作的时间戳
 - pingMs 网络延迟
 - syncingTo 复制源
+
+sateStr 服务状态
+- 可提供服务状态： PRIMARY, SECONDARY, ARBITER
+- 即将提供服务状态: STARTUP, STARTUP2, RECOVERING
+- 不可提供服务状态: DOWN, UNKNOW, REMOVED, ROLLBACK, FATAL
+
+### rs.printReplicationInfo()
+- log length start to end oplog 的时间窗口
+- oplog first event time 开始时间
+- oplog end event time 结束时间
+- now 现在的时间
+
+### rs.printSlaveReplacationInfo
+- syncedTo 复制进度
+- X secs (XX) behind the primary 落后进度
+
+### 监控项目
+- QPS: 每秒查询数量
+- I/O: 读写性能
+- Memory: 内存使用
+- Connections: 连接数
+- Page Faults: 缺页中断(要查的东西, 不在内存, 要跑硬盘)
+- Index hit: 索引命中率
+- Background flush: 后台刷新
+- Queue: 队列
+
+### mongostat
+重点字段
+
+- getmore 大量排序操作正在进程
+- faults 需要的数据不在内存中
+- locked db 锁比率最好的库
+- inedx miss 索引未命中
+- qr|qw 读写产生队列, 供求失衡

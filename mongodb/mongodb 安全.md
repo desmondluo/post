@@ -13,7 +13,7 @@ auth = true
 创建用户
 ```
 use admin;
-db.create(
+db.createUser(
   {
     user: "admin",
     "pwd": "admin",
